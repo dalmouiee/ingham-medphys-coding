@@ -12,19 +12,19 @@
 #           ie. python train_and_eval.py data
 #
 # Output:       Plots of the various metrics used to evaluate the testing performance of the models
-#               Also, info relatng to the state of the script is printed to STDOUT for the user to track if need be
+#               Also, info relating to the state of the script is printed to STDOUT for the user to track if need be
 #
 # Assumptions:
 #   1) The feature 'ajcc_stage' denotes the patient's cancer prognosis
 #  
 # Limitations:
 #
-#   1)  The datasets did not provide an explanation to many features and so
+#   1)  The datasets did not provide an explanation for the features and so
 #       many were not explored for this challenge due to this ambiguity
 #
 #   2)  The hyperparameters choosen for the models are not necessarily optimal and so
 #       model performance could be improved further by performing a search for an
-#       optimal architecture for the different tasks 
+#       optimal architecture
             
 import sys
 from pathlib import Path
@@ -66,7 +66,7 @@ class_outputs = [   'event_overall_survival',
                     'ajcc_stage'  
                 ]
 
-# Method used to convert the 'ajcc_stage' roman numeral values to integers
+# Method used to convert the 'ajcc_stage' Roman numeral values to integers
 def convert_roman_nums_to_int(df_col):
     roman_nums = list(df_col.drop_duplicates())
     ints = range(len(roman_nums))
