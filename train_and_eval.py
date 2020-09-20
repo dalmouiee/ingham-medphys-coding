@@ -185,7 +185,6 @@ def train_and_eval(df_clinical_data, all_feats, out_feat, models, task):
     print('Producing' , task, 'plots...')
     plots(all_feats, cor_list, all_met_1, all_met_2, models, task, out_feat)
 
-
 # Main method
 def main():
     # Define paths to our data
@@ -219,9 +218,6 @@ def main():
     # Convert the Roman numeral values to integers  
     df_clinical_data['ajcc_stage'] = convert_roman_nums_to_int(df_clinical_data['ajcc_stage']) 
     all_feats.append('ajcc_stage')
-
-    # List to hold the correlation values for the chosen features
-    corr_list = []
 
     # Train and evaluate models for regression task
     print('Training and Evaluating Regression models...')
