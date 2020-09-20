@@ -1,5 +1,7 @@
 # Ingham Medical Physics Coding Challenge
 
+**NOTE**: Daniel's solution is contained in the train_and_eval.py script, where appropriate comments are located in the header and throughout the script...  
+
 See the **Challenge_September_2020.ipynb** Jupyter Notebook for the challenge description.
 
 This repository contains data from the Head-Neck-Radiomics-HN1 dataset: https://wiki.cancerimagingarchive.net/display/Public/Head-Neck-Radiomics-HN1:
